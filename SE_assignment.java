@@ -77,6 +77,13 @@ public class SE_ass {
                     // call your func. here
                     break;
                 }
+                case 18:
+                {
+                    // call your func. here
+                    most_repeated(arr);
+                    break;
+                }
+                
                 
             }
             
