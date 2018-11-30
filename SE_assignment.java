@@ -17,6 +17,41 @@ public class SE_ass {
     /**
      * @param args the command line arguments
      */
+    /********************************/
+    public void getMedian()
+    {
+        int arrSize,Numbers;
+        double median;
+        System.out.println("How many nambers you want to count it's medium? ");
+        Scanner input = new Scanner(System.in);
+        arrSize= input.nextInt();
+        int Arr[] = new int[arrSize];
+        System.out.println("Please enter your numbers:");
+        for(int i=0;i<arrSize;i++)
+        {
+            Numbers=input.nextInt();
+            Arr[i]=Numbers;
+        }
+        for(int i=0;i<Arr.length;i++)
+        {
+            int temp;
+            for (int j = i; j > 0; j--)
+            {
+                if (Arr[j] < Arr[j - 1])
+                {
+                    temp = Arr[j];
+                    Arr[j] = Arr[j - 1];
+                    Arr[j - 1] = temp;
+                }
+            }
+        }
+
+        if (Arr.length % 2 == 0)
+            median = ((double)Arr[Arr.length/2] + (double)Arr[Arr.length/2 - 1])/2;
+        else
+            median =  Arr[Arr.length/2];
+        System.out.println("the median is : " + median);
+    }
     public static void main(String[] args) {
         // TODO code application logic here
         int choice =0;
@@ -74,6 +109,11 @@ public class SE_ass {
                 }case 4:
                 {
                     // call your func. here
+                    break;
+                }
+                case 15:
+                {
+                    getMedian();
                     break;
                 }
                 
