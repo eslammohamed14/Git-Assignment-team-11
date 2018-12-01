@@ -123,7 +123,6 @@ public class SE_ass {
 	    for (int i = arr.length - 1; i > 0; i--)
 	    {
 	      int index = rnd.nextInt(i + 1);
-	      // Simple swap
 	      int a = arr[index];
 	      arr[index] = arr[i];
 	      arr[i] = a;
