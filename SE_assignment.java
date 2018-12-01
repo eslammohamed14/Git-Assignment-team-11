@@ -74,7 +74,7 @@ public class SE_ass {
                     break;
                 }case 4:
                 {
-                    // call your func. here
+                    get_largest_Prime(arr);
                     break;
                 }
                 case 18:
@@ -110,6 +110,21 @@ public class SE_ass {
            }
         System.out.println("The most repeated value is: "+greater);
     
+    }
+    public static void get_largest_Prime(int[]arr)
+    {
+        int max=0;
+        for(int i=0;i<arr.length;i++)
+        {for(int j=2;j<arr[i];j++)
+        {
+            if (arr[i]%j!=0 &&arr[i]>max)
+            {
+                max=arr[i];
+            }
+        }
+        }
+        System.out.println("the maximum prime number is "+max);
+
     }
     
 }
