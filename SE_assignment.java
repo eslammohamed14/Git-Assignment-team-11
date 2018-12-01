@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package se_ass;
+package pkgfor.test;
 
 import java.io.*; 
 import java.util.*; 
 
 /**
  *
- * @author Team 11.
+ * @author Mohamed_Reda
  */
-public class SE_ass {
+public class ForTest {
 
     /**
      * @param args the command line arguments
@@ -62,7 +62,8 @@ public class SE_ass {
                 case 1:
                 {
                     // call your func. here
-                    most_repeated(arr);
+                    
+            Get_Average(arr);
                     break;
                 }case 2:
                 {
@@ -80,7 +81,7 @@ public class SE_ass {
                 case 18:
                 {
                     // call your func. here
-                    most_repeated(arr);
+                    Get_Average(arr);
                     break;
                 }
                 
@@ -91,24 +92,16 @@ public class SE_ass {
         
     
     }
-    public static void most_repeated(char[]x)
+  public static void Get_Average(char arr[])
     {
-        int count=0;
-        int a=0;
-        char greater='0';
-        for(int q=0;q<x.length;q++)
-        {
-        for(int j=0;j<x.length;j++)
-        {
-        if(x[q]==x[j])
-         {count++;}
-       }
-       if(count>a)
-       { a=count;
-         greater=x[q];
-       }count=0;
-           }
-        System.out.println("The most repeated value is: "+greater);
+       //Ahmed Yassin
+        //20160041
+       double sum=0;
+      double v=0;
+       for(int i=0;i<arr.length;i++)
+           sum+=Character.getNumericValue(arr[i]);
+          v=sum/arr.length;
+       System.out.println(" Average = " +v);
     
     }
     
