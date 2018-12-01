@@ -111,7 +111,7 @@ public class SE_ass {
         System.out.println("The most repeated value is: "+greater);
     
     }
-    public static void get_largest_Prime(int[]arr)
+    public static void get_largest_Prime(char[]arr)
     {
         int max=0;
         for(int i=0;i<arr.length;i++)
